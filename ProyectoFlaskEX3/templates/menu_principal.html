@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilo.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Elige uno de los ejercicios</h1>
+    </header>
+
+    <div class="menu">
+        <form action="{{ url_for('formulario1') }}">
+            <button type="submit">Ejercicio 1</button>
+        </form>
+        <form action="{{ url_for('formulario2') }}">
+            <button type="submit">Ejercicio 2</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Derechos reservados &copy; Pablo Ibarra</p>
+    </footer>
+</body>
+</html>
